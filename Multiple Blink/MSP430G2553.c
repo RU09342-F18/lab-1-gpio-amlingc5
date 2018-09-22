@@ -3,15 +3,15 @@
 int main(void)
 {
     WDTCTL = WDTPW | WDTHOLD;   // stop watchdog timer
-    P1DIR |= BIT0 | BIT6; //assigns BIT0 and BIT6 to have an output direction
-    P1SEL &= ~(BIT0 + BIT6); //assigns value of 0 to Pin1 and Pin6 in P1SEL SFR
+    P1DIR |= BIT0 | BIT6; //assigns BIT0 and BIT6 to output
+    P1SEL &= ~(BIT0 + BIT6); //assigns value of 0 to Pin1 and Pin6
     int a = 0;
     int b = 0;
     while(1)
     {
         a += 1;
         b += 1;
-        __delay_cycles(25000);
+        __delay_cycles(25000); //
 
         if (a == 25)
         {
