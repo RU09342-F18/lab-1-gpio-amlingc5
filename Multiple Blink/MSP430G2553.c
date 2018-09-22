@@ -11,7 +11,7 @@ int main(void)
     {
         a += 1;
         b += 1;
-        __delay_cycles(25000); //
+        __delay_cycles(25000); // sets LED delay
 
         if (a == 25)
         {
