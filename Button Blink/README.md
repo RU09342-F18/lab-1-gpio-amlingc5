@@ -1,6 +1,6 @@
 # Chris Amling
 # Lab 1
-# Multiple Blink
+# Button Blink
 September 21, 2018
 
 In each of the two files are code that will blink multiple LEDs on both the MSP430G2 and the MSP430F5529 at different rates. The delay in each of the codes allows the time between blinks to be changed. 
